@@ -1,14 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    external-dns.alpha.kubernetes.io/hostname: testapp33.hlx-dev.com
-    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:eu-central-1:752201946073:certificate/425a6cee-56e0-44c2-885a-dfdea4586ec9
-    service.beta.kubernetes.io/aws-load-balancer-ssl-negotiation-policy: ELBSecurityPolicy-FS-1-2-2019-08
   name: guestbook-ui
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   ports:
     - name: http
