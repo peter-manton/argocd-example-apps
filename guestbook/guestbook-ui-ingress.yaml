@@ -8,7 +8,7 @@ metadata:
     alb.ingress.kubernetes.io/ssl-policy: ELBSecurityPolicy-TLS13-1-2-2021-06
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/certificate-arn: CONFIG_ARGO_CERT_ARN
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-central-1:752201946073:certificate/425a6cee-56e0-44c2-885a-dfdea4586ec9
     alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
     alb.ingress.kubernetes.io/inbound-cidrs: "52.59.121.46/32, 34.248.196.86/32, 193.117.188.210/32"
     alb.ingress.kubernetes.io/backend-protocol: HTTPS
